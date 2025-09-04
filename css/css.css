@@ -1,0 +1,91 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
+h1{
+  color:rgb(241, 247, 240);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2{color:rgb(57, 90, 140)}
+p{color:rgb(27, 135, 171)}
+/*Billeder i 100%*/
+img{
+  width:100%;
+}
+.flex{
+  display:flex;
+}
+
+#topNav {
+  background-color: darkgrey;
+}
+  #topNav a {color: rgb(0, 0, 0);
+}
+#topNav a:hover {color:blue
+}
+
+/*hero sectionen styles*/
+header{
+  height:100vh;
+  background-color: beige;
+/*herobillede i baggrunden*/
+  background-image: url('../images/hero.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  
+
+
+    /*Læg teksten i midten*/
+display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+h2{text-align: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+aside{text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* RESPONSIVT DESIGN */
+@media (max-width:600px){
+  body{
+    background-color: beige;
+  }
+  #stemning{
+    display:block;
+  }
+}
+/* Tablets, Ipads &c. */
+@media (min-width:601px) and (max-width:1024px){
+  body{background-color: antiquewhite;}
+  }
+}
